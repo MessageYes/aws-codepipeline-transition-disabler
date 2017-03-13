@@ -17,7 +17,7 @@ Create a new Lambda function to run the disabler code:
 1. Visit https://console.aws.amazon.com/lambda/home
 2. If this will be your first Lambda function, click "Get Started", otherwise click "Create a Lambda Function".
 3. Select "Blank Function".
-4. On the "Select Triggers" page, click next (we will setup the triggers later).
+4. On the "Select Triggers" page, click next (we will set up the triggers later).
 5. Give your function a name (e.g. pipeline-transition-disabler) and select "Java 8" as the runtime.
 6. Build the package locally using `maven clean install` and upload the resulting JAR in the "Function Package" section.
 7. Add environment variables for each of the pipelines you want to interact with. For each pipeline, set the key to be the name of the Elastic Beanstalk environment (NOTE: the environment variables do not support `-`, so any `-`'s that appear in your environment name should be replaced with `_` in the key name). Set the value for each key to the name of the pipeline that it should disable (use of `-` is allowed in the values). You can always add more environment variables later, as well.

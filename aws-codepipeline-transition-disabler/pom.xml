@@ -8,7 +8,7 @@
   <packaging>jar</packaging>
 
   <name>${project.groupId}:${project.artifactId}</name>
-  <description>AWS Lambda function for automatically disabling CodePipelines after deployments. </description>
+  <description>AWS Lambda function for automatically disabling CodePipelines after deployments.</description>
   <organization>
     <name>ReplyYes</name>
     <url>http://replyyes.com</url>
