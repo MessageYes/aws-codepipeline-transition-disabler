@@ -1,4 +1,4 @@
-package com.replyyes.lambda;
+package com.messageyes.lambda;
 
 import java.util.Set;
 
