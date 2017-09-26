@@ -21,7 +21,7 @@ Create a new Lambda function to run the disabler code:
 5. Give your function a name (e.g. pipeline-transition-disabler) and select "Java 8" as the runtime.
 6. Build the package locally using `maven clean install` and upload the resulting JAR in the "Function Package" section.
 7. Add environment variables for each of the pipelines you want to interact with. For each pipeline, set the key to be the name of the Elastic Beanstalk environment (NOTE: the environment variables do not support `-`, so any `-`'s that appear in your environment name should be replaced with `_` in the key name). Set the value for each key to the name of the pipeline that it should disable (use of `-` is allowed in the values). You can always add more environment variables later, as well.
-8. Set the "Handler" to `com.replyyes.lambda.PipelineTransitionDisabler`.
+8. Set the "Handler" to `com.messageyes.lambda.PipelineTransitionDisabler`.
 9. Set the "Role" to "Create a custom role".
 10. Give the role a "Name" (e.g. lambda_pipline) and click "Next".
 11. When you are returned to the Lambda function creation wizard, click "Advanced settings".
